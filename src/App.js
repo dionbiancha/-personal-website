@@ -1,13 +1,35 @@
+import React from 'react';
+import { connect } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
+
 import './App.css';
 
-function App() {
+import { Template } from './components/MainComponents';
+import Header from './components/partials/Header';
+import Routes from './Routes';
+
+
+const Page = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-    
-      </header>
-    </div>
+    <BrowserRouter>
+     <Template>
+       <Header />
+       <Routes />
+     </Template>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Page);

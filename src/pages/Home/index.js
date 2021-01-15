@@ -2,10 +2,14 @@ import React from 'react';
 import { 
   YoutubeArea,
   InstagramArea,
+  AboutArea,
   Container,
   Title,
   Button 
 } from './styled';
+
+import Carousel from '../../components/Carousel';
+import ComingEvents from '../../components/ComingEvents';
 
 const canal = 'https://www.youtube.com/watch?v=EQajlRqMTCM&ab_channel=UnimedCascavel';
 
@@ -33,11 +37,23 @@ export default () => {
             </div>
           </Container>
       </YoutubeArea>
+      <AboutArea>
+        <Container>
+          <Title color="#FFF">Eventos</Title>
+          <div className="rowAbout">
+            <div className="carouselArea">
+              <Carousel />
+            </div>
+            <div className="eventsArea">
+              <ComingEvents />
+              <Title color="#FFF" fontSize={15}>Nenhum evento próximo</Title>
+            </div>
+          </div>
+        </Container>
+      </AboutArea>
       <InstagramArea>
         <Container>
-          <div>
-            <Title color="#000">Follow me</Title>
-          </div>
+          <Title color="#000">Follow me</Title>
           <div className="photos">
             <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
             <iframe src="//lightwidget.com/widgets/951340c54f0551809dcfa79763c52933.html" 

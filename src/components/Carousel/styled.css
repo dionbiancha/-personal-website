@@ -1,0 +1,11 @@
+.slick-slide img {
+  margin: auto;
+  height: 350px;
+  width: 100%;
+}
+
+.container p {
+  text-align: center;
+  color: #CCC;
+  font-weight: lighter;
+}

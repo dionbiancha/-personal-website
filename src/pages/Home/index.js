@@ -22,8 +22,7 @@ export default () => {
             <div className="videoArea">
               <div className="iframe">
                 <iframe 
-                  width="700" 
-                  height="400" 
+                  className="youVideo"
                   src="https://www.youtube.com/embed/EQajlRqMTCM" 
                   frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

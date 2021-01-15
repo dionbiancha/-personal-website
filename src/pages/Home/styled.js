@@ -1,24 +1,58 @@
 import styled from 'styled-components';
 
 export const YoutubeArea = styled.div`
-  width: 100%;
-  height: 550px;
-  background-color: #000;
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+    height: 550px;
+    background-color: #000;
 
-  .videoArea {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    .videoArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
 
-    .iframe {
-      margin-bottom: 40px;
+      .iframe {
+        margin-bottom: 40px;
+
+        .youVideo {
+          width: 700px;
+          height: 400px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
     }
   }
+    
+  @media only screen and (max-width: 768px) and (min-width: 400px) {
+    width: 100%;
+    height: 450px;
+    background-color: #000;
 
-  a {
-    text-decoration: none;
+    .videoArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      .iframe {
+        margin-bottom: 40px;
+
+        .youVideo {
+          width: 350px;
+          height: 250px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 `;
 
@@ -61,42 +95,85 @@ export const Button = styled.div`
 `;
 
 export const InstagramArea = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 350px;
-  background-color: #FFF;
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: #FFF;
 
-  .photos {
-    padding-bottom: 40px;
+    .photos {
+      padding-bottom: 40px;
 
-    iframe {
-      width: 680px;
-      border:0;
-      overflow: hidden;
+      iframe {
+        width: 680px;
+        border:0;
+        overflow: hidden;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width: 400px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: #FFF;
+
+    .photos {
+      padding-bottom: 40px;
+
+      iframe {
+        width: 500px;
+        border:0;
+        overflow: hidden;
+      }
     }
   }
 `;
 
 export const EventArea = styled.div`
-  width: 100%;
-  height: 700px;
-  background-color: #161616;
-
-  .rowEvent {
-    display: flex;
-    flex-direction: row;
+  @media only screen and (min-width: 768px) {
     width: 100%;
-    background-color: #FFF;
-    padding: 30px;
+    height: 700px;
+    background-color: #161616;
 
-    .carouselArea {
-      width: 50%;
+    .rowEvent {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      background-color: #FFF;
+      padding: 30px;
+
+      .carouselArea {
+        width: 50%;
+      }
+      .eventsArea {
+        width: 50%;
+      }
     }
-    .eventsArea {
-      width: 50%;
+  }
+  @media only screen and (max-width: 768px) and (min-width: 400px) {
+    width: 100%;
+    height: 500px;
+    background-color: #161616;
+
+    .rowEvent {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      background-color: #FFF;
+      padding: 30px;
+
+      .carouselArea {
+        display: none
+      }
+      .eventsArea {
+        width: 100%;
+      }
     }
+  }
   }
 `;
 

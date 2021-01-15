@@ -11,6 +11,10 @@ export const YoutubeArea = styled.div`
     justify-content: center;
     align-items: center;
     padding: 20px;
+
+    .iframe {
+      margin-bottom: 40px;
+    }
   }
 
   a {
@@ -37,9 +41,9 @@ export const Button = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   width: 250px;
   height: 50px;
-  margin-top: 50px;
   border: 2px solid #FFF;
   color: #FFF;
   transition: all ease .4s;
@@ -75,21 +79,52 @@ export const InstagramArea = styled.div`
   }
 `;
 
-export const AboutArea = styled.div`
+export const EventArea = styled.div`
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-color: #161616;
 
-  .rowAbout {
+  .rowEvent {
     display: flex;
     flex-direction: row;
     width: 100%;
+    background-color: #FFF;
+    padding: 30px;
 
     .carouselArea {
       width: 50%;
     }
     .eventsArea {
       width: 50%;
+    }
+  }
+`;
+
+export const ContactArea = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+
+  .containerContact {
+    flex-direction: column;
+    height: 280px;
+
+    .textContact {
+      width: 80%;
+      margin: auto;
+    }
+
+    a {
+      text-decoration: none;;
+    }
+  
+    p {
+      color: #919191;
+      font-size: 20px;
+      margin-bottom: 40px;
+      text-align: center;
     }
   }
 `;

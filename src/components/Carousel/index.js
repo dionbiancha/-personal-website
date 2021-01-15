@@ -18,7 +18,7 @@ export default class Carousel extends React.Component {
       dots: true,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 5000
     };
     return (
       <div className="container">

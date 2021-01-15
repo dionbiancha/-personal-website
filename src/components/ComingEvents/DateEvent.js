@@ -20,13 +20,30 @@ const Date = styled.div`
   }
 `;
 const Description = styled.h4`
-  color: #CCC;
+  color: #161616;
   margin: auto;
 `;
 
 const infoEvent = [
   {
-
+    day: 8, 
+    month: 'MAR', 
+    description: 'Chimelong International Forum on Tourism Developmen'
+  },
+  {
+    day: 20, 
+    month: 'ABR', 
+    description: 'Chimelong International Forum on Tourism Developmen'
+  },
+  {
+    day: 19, 
+    month: 'JUN', 
+    description: 'Chimelong International Forum on Tourism Developmen'
+  },
+  {
+    day: 10, 
+    month: 'DEZ', 
+    description: 'Chimelong International Forum on Tourism Developmen'
   }
 ];
 
@@ -36,7 +53,7 @@ export default () => {
       {infoEvent.map((i)=> 
         <Container>
           <Date>
-          <span style={{fontSize: '10px'}}>{i.month}</span>
+          <span style={{fontSize: '10px', fontWeight: 'bold'}}>{i.month}</span>
           <span style={{fontSize: '25px', fontWeight: 'bold'}}>{i.day}</span>
           </Date>
           <Description>

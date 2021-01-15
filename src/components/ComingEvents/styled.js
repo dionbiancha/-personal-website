@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   
   h3 {
-    color: #FFF;
+    color: #161616;
     font-size: 15px;
   }
 `;

@@ -1,17 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import logo from '../../../image/logo.png';
+import { HeaderArea } from './styled';
+import logo from './images/logo.png';
 
 export default () => {
   return (
-    <div className="container">
-      <header>
-        <nav>
-          <a>
-            <img src={logo} alt="logo" />
-          </a>
-        </nav>
-      </header>
-    </div>
+      <HeaderArea>
+        <div className="container">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="Logo" />
+            </Link>
+          </div>
+          <div className="menu">
+        
+          </div>
+        </div>
+      </HeaderArea>
   );
 };

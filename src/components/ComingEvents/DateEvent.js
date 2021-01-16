@@ -26,25 +26,10 @@ const Description = styled.h4`
 
 const infoEvent = [
   {
-    day: 8, 
-    month: 'MAR', 
-    description: 'Chimelong International Forum on Tourism Developmen'
-  },
-  {
-    day: 8, 
-    month: 'MAR', 
-    description: 'Chimelong International Forum on Tourism Developmen'
-  },
-  {
-    day: 8, 
-    month: 'MAR', 
-    description: 'Chimelong International Forum on Tourism Developmen'
-  },
-  {
-    day: 8, 
-    month: 'MAR', 
-    description: 'Chimelong International Forum on Tourism Developmen'
-  },
+    //day: 8, 
+    //month: 'MAR', 
+    //description: 'Chimelong International Forum on Tourism Developmen'
+  }
 ];
 
 export default () => {

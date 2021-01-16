@@ -105,7 +105,7 @@ export const Title = styled.h3`
     margin: 50px
   }
   @media only screen and (max-width: 460px) {
-    font-size: ${props=>props.fontSize || 24}px;
+    font-size: ${props=>props.fontSize || 20}px;
     font-family: 'Archivo Black', sans-serif;
     color: ${props=>props.color || '#FFF'};
     text-align: center;
@@ -305,13 +305,15 @@ export const EventArea = styled.div`
 export const ContactArea = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 300px;
   background-color: #000;
 
   .containerContact {
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    height: 280px;
 
     .textContact {
       width: 80%;
@@ -332,13 +334,15 @@ export const ContactArea = styled.div`
   @media only screen and (max-width: 460px) {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-color: #000;
 
     .containerContact {
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
-      height: 200px;
 
       .textContact {
         width: 80%;

@@ -194,7 +194,7 @@ export const ContactArea = styled.div`
     }
 
     a {
-      text-decoration: none;;
+      text-decoration: none;
     }
   
     p {

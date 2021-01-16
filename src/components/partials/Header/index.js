@@ -9,7 +9,7 @@ export default () => {
       <HeaderArea>
         <div className="container">
           <div className="logo">
-            <Link to="/">
+            <Link to="/personal-website/">
               <img src={logo} alt="Logo" />
             </Link>
           </div>

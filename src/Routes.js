@@ -7,7 +7,7 @@ import NotFound from './pages/NotFound';
 export default () => {
   return (
     <Switch>
-      <Route exact path="/">
+      <Route exact path="/personal-website/">
         <Home />
       </Route>
       <Route>

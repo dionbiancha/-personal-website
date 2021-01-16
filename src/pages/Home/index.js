@@ -12,7 +12,8 @@ import {
 import Carousel from '../../components/Carousel';
 import ComingEvents from '../../components/ComingEvents';
 
-const canal = 'https://www.youtube.com/watch?v=EQajlRqMTCM&ab_channel=UnimedCascavel';
+const canal = 'https://www.youtube.com/channel/UCGEomUECJvfyx6Qf4ug6DWQ';
+const whats = 'http://wa.me/5545988269789';
 
 export default () => {
   return(
@@ -48,9 +49,7 @@ export default () => {
             </div>
             <div className="eventsArea">
               <ComingEvents />
-
-              {/*<Title color="#FFF" fontSize={15}>Nenhum evento próximo</Title>*/}
-
+              <Title color="#3F3F3F" fontSize={15}>Nenhum evento próximo</Title>
             </div>
           </div>
         </Container>
@@ -66,7 +65,7 @@ export default () => {
               </p>
             </div>
             <div>
-              <a href={canal} target="_blank">
+              <a href={whats} target="_blank">
                 <Button>
                   <span>
                     Fale comigo

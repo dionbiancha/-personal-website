@@ -28,7 +28,7 @@ export const YoutubeArea = styled.div`
     }
   }
     
-  @media only screen and (max-width: 768px) and (min-width: 400px) {
+  @media only screen and (max-width: 768px) and (min-width: 460px) {
     width: 100%;
     height: 450px;
     background-color: #000;
@@ -46,6 +46,32 @@ export const YoutubeArea = styled.div`
         .youVideo {
           width: 350px;
           height: 250px;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+
+    .videoArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      .iframe {
+        margin-bottom: 40px;
+
+        .youVideo {
+          width: 250px;
+          height: 150px;
         }
       }
     }
@@ -113,7 +139,25 @@ export const InstagramArea = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 768px) and (min-width: 400px) {
+  @media only screen and (max-width: 768px) and (min-width: 460px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: #FFF;
+
+    .photos {
+      padding-bottom: 40px;
+
+      iframe {
+        width: 500px;
+        border:0;
+        overflow: hidden;
+      }
+    }
+  }
+  @media only screen and (max-width: 460px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +198,7 @@ export const EventArea = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 768px) and (min-width: 400px) {
+  @media only screen and (max-width: 768px) and (min-width: 460px) {
     width: 100%;
     height: 500px;
     background-color: #161616;
@@ -174,6 +218,25 @@ export const EventArea = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 460px) {
+    width: 100%;
+    height: 500px;
+    background-color: #161616;
+
+    .rowEvent {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      background-color: #FFF;
+      padding: 30px;
+
+      .carouselArea {
+        display: none
+      }
+      .eventsArea {
+        width: 100%;
+      }
+    }
   }
 `;
 
@@ -202,6 +265,34 @@ export const ContactArea = styled.div`
       font-size: 20px;
       margin-bottom: 40px;
       text-align: center;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+
+    .containerContact {
+      flex-direction: column;
+      height: 200px;
+
+      .textContact {
+        width: 80%;
+        margin: auto;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    
+      p {
+        color: #919191;
+        font-size: 18px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
     }
   }
 `;

@@ -49,7 +49,7 @@ export default () => {
             </div>
             <div className="eventsArea">
               <ComingEvents />
-              <Title color="#3F3F3F" fontSize={15}>Nenhum evento próximo</Title>
+              {/*<Title color="#3F3F3F" fontSize={15}>Nenhum evento próximo</Title>*/}
             </div>
           </div>
         </Container>

@@ -13,7 +13,7 @@ export const HeaderArea = styled.div`
 
     .logo {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       flex: 1;  
 
       img {
@@ -21,9 +21,6 @@ export const HeaderArea = styled.div`
         height: 50px;
 
       }
-    }
-    .menu {
-      flex: 1;
     }
   }
 `;

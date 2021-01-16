@@ -13,9 +13,6 @@ export default () => {
               <img src={logo} alt="Logo" />
             </Link>
           </div>
-          <div className="menu">
-        
-          </div>
         </div>
       </HeaderArea>
   );

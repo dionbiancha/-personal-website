@@ -90,33 +90,95 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-size: ${props=>props.fontSize || 24}px;
-  font-family: 'Archivo Black', sans-serif;
-  color: ${props=>props.color || '#FFF'};
-  text-align: center;
-  margin: 50px
+  @media only screen and (min-width: 768px) {
+    font-size: ${props=>props.fontSize || 24}px;
+    font-family: 'Archivo Black', sans-serif;
+    color: ${props=>props.color || '#FFF'};
+    text-align: center;
+    margin: 50px
+  }
+  @media only screen and (max-width: 768px) and (min-width: 460px) {
+    font-size: ${props=>props.fontSize || 24}px;
+    font-family: 'Archivo Black', sans-serif;
+    color: ${props=>props.color || '#FFF'};
+    text-align: center;
+    margin: 50px
+  }
+  @media only screen and (max-width: 460px) {
+    font-size: ${props=>props.fontSize || 24}px;
+    font-family: 'Archivo Black', sans-serif;
+    color: ${props=>props.color || '#FFF'};
+    text-align: center;
+    margin: 30px
+  }
 `;
 
 export const Button = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 250px;
-  height: 50px;
-  border: 2px solid #FFF;
-  color: #FFF;
-  transition: all ease .4s;
-
-  span {
-    font-size: 24px;
-    font-family: 'Archivo Black', sans-serif;
-  }
-
-  &:hover {
-    background-color: #FFFFFF;
-    color: #303030;
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    border: 2px solid #FFF;
+    color: #FFF;
     transition: all ease .4s;
+
+    span {
+      font-size: 24px;
+      font-family: 'Archivo Black', sans-serif;
+    }
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: #303030;
+      transition: all ease .4s;
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width: 460px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 250px;
+    height: 50px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    transition: all ease .4s;
+
+    span {
+      font-size: 24px;
+      font-family: 'Archivo Black', sans-serif;
+    }
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: #303030;
+      transition: all ease .4s;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    transition: all ease .4s;
+
+    span {
+      font-size: 20px;
+      font-family: 'Archivo Black', sans-serif;
+    }
+
+    &:hover {
+      background-color: #FFFFFF;
+      color: #303030;
+      transition: all ease .4s;
+    }
   }
 `;
 
@@ -271,7 +333,7 @@ export const ContactArea = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-color: #000;
 
     .containerContact {

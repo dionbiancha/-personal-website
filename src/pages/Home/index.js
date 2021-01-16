@@ -16,6 +16,7 @@ const canal = 'https://www.youtube.com/channel/UCGEomUECJvfyx6Qf4ug6DWQ';
 const whats = 'http://wa.me/5545988269789';
 
 export default () => {
+  document.title = 'Dionei Bianchati';
   return(
     <>
       <YoutubeArea>

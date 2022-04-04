@@ -34,11 +34,6 @@
 </p>
 
 ![App Screenshot](https://res.cloudinary.com/dionbiancha/image/upload/v1610804353/github/1_rzopii.png)
-<p align="center">
-  <a href="https://dionbiancha.github.io/personal-website-prototype/" target="_blank">
-    <img alt="Lading page" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610500435/github/view_on_github_n2rq43.png">
-  </a>
-</p>
 
 ## :computer: Technologies
 
